@@ -93,13 +93,56 @@ body {
   border-radius: 10px;
   padding: 2rem;
   height: 100%;
-  transition: transform var(--transition-fast);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transition-fast), box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .service-card:hover,
 .industry-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Industry Icon Styles */
+.industry-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.industry-card:hover .industry-icon {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.industry-icon i {
+  font-size: 2rem;
+  color: white;
+}
+
+.industry-card h3 {
+  color: var(--primary-dark);
+  margin: 1rem 0;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.industry-card p {
+  color: #555;
+  margin-bottom: 0;
+  font-size: 0.95rem;
 }
 
 /* Background Colors */
@@ -338,16 +381,6 @@ body {
   position: relative;
 }
 
-.job-type {
-  display: inline-block;
-  padding: 0.25rem 1rem;
-  background: var(--primary-gradient);
-  color: white;
-  border-radius: 20px;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-}
 
 .job-location {
   color: #666;
@@ -415,6 +448,32 @@ body {
   margin-bottom: 15px;
   font-weight: 600;
   font-size: 1.4rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Adjust anchor scroll position to account for fixed header */
+:target {
+  scroll-margin-top: 100px;
+  animation: highlight-section 1.5s ease-out;
+}
+
+@keyframes highlight-section {
+  0% { background-color: rgba(var(--primary-rgb), 0.1); }
+  100% { background-color: transparent; }
+}
+
+/* Service item styling for better anchor navigation */
+.service-item {
+  padding: 30px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.service-item:target {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .service-content p {

@@ -1,27 +1,139 @@
-.services-content {
-  background: var(--primary-gradient), url('');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 150px 0;
+/* Using the about-header style from About.css */
+/* The about-header class is defined in the main CSS or About.css */
+
+/* Main Content Section Styles */
+.offer-main-content {
+  padding: 5rem 0;
+  background-color: white;
 }
 
-.services-intro {
-  max-width: 800px;
-  margin: 0 auto 4rem;
-  text-align: center;
-}
-
-.services-intro p {
-  font-size: 1.1rem;
+.offer-main-content .lead {
+  font-size: 1.2rem;
+  color: #333;
   line-height: 1.8;
-  color: white;
-  margin-bottom: 1.5rem;
+}
+
+.offer-main-content p {
+  color: #555;
+  line-height: 1.7;
+}
+
+.offer-main-content hr {
+  border-color: rgba(0,0,0,0.1);
+  margin: 2.5rem 0;
 }
 
 .expertise-section {
   padding: 5rem 0;
-  background: white;
+  background: #f8f9fa;
+}
+
+/* Main Content Section Styles */
+.offer-main-content {
+  padding: 5rem 0;
+}
+
+.content-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  position: relative;
+  margin-top: -80px;
+}
+
+.content-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.content-icon i {
+  font-size: 2rem;
+  color: white;
+}
+
+.content-card p.lead {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.8;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.content-card p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.content-divider {
+  height: 2px;
+  background: linear-gradient(to right, rgba(0,0,0,0.05), rgba(0,0,0,0.1), rgba(0,0,0,0.05));
+  margin: 2rem 0;
+  border-radius: 1px;
+}
+
+/* Approach Section Styles */
+.approach-section {
+  padding: 5rem 0;
+  background-color: white;
+}
+
+.approach-content {
+  padding-left: 2rem;
+}
+
+.approach-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--primary-dark);
+}
+
+.approach-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.approach-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+}
+
+.approach-icon i {
+  font-size: 1.25rem;
+  color: white;
+}
+
+.approach-text h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--primary-dark);
+}
+
+.approach-text p {
+  color: #555;
+  margin-bottom: 0;
 }
 
 .expertise-grid {
@@ -102,7 +214,7 @@
     grid-template-columns: 1fr;
   }
 }
-/* New role cards grid styling */
+/* Role cards grid styling */
 .roles-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -112,22 +224,73 @@
 
 .role-card {
   background-color: white;
-  border-radius: 8px;
-  padding: 20px;
+  border-radius: 12px;
+  padding: 25px 20px;
   text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100px;
+  min-height: 120px;
   font-weight: 500;
   color: var(--primary-dark);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .role-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background-color: var(--primary);
+  color: var(--primary-dark);
+}
+
+.role-card i {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: var(--primary);
+  transition: color 0.3s ease;
+}
+
+.role-card span {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Call to Action Section */
+.cta-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.cta-section .lead {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  opacity: 0.9;
+}
+
+.cta-section .btn {
+  background-color: white;
+  color: var(--primary-dark);
+  border: none;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-section .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Responsive adjustments */

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const Home = () => {
   return (
@@ -88,10 +89,10 @@ const Home = () => {
                   <div className="service-content">
                     <h3>{service.title}</h3>
                     <p>{service.description}</p>
-                    <Link to={service.link} className="know-more-btn">
+                    <HashLink smooth to={service.link} className="know-more-btn">
                       <span>Know More</span>
                       <i className="fas fa-arrow-right"></i>
-                    </Link>
+                    </HashLink>
                   </div>
                 </div>
               </div>
@@ -116,9 +117,9 @@ const Home = () => {
                 <Link to="/job-openings" className="btn btn-primary btn-lg me-3">
                   Find Open Jobs
                 </Link>
-                <Link to="/job-seekers" className="btn btn-outline-primary btn-lg">
+                <HashLink smooth to="/job-seekers#how-it-works" className="btn btn-outline-primary btn-lg">
                   How It Works
-                </Link>
+                </HashLink>
               </div>
             </div>
             <div className="col-lg-6" data-aos="fade-left">
@@ -142,27 +143,35 @@ const Home = () => {
             {[
               {
                 title: 'Telecommunication',
-                description: 'Digital solutions for telecom'
+                description: 'Digital solutions for telecom',
+                icon: 'fas fa-signal'
               },
               {
                 title: 'Banking and Finance',
-                description: 'Secure and innovative financial solutions'
+                description: 'Secure and innovative financial solutions',
+                icon: 'fas fa-dollar-sign'
               },
               {
                 title: 'Retail',
-                description: 'Digital transformation for retail success'
+                description: 'Digital transformation for retail success',
+                icon: 'fas fa-store'
               },
               {
                 title: 'Public Sector',
-                description: 'Empowering government services'
+                description: 'Empowering government services',
+                icon: 'fas fa-building'
               },
               {
                 title: 'Healthcare and Insurance',
-                description: 'Technology solutions for healthcare'
+                description: 'Technology solutions for healthcare',
+                icon: 'fas fa-hospital'
               }
             ].map((industry, index) => (
               <div className="col-lg-4 col-md-6" data-aos="fade-up" key={index}>
                 <div className="industry-card">
+                  <div className="industry-icon">
+                    <i className={industry.icon}></i>
+                  </div>
                   <h3>{industry.title}</h3>
                   <p>{industry.description}</p>
                 </div>

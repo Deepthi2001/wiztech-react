@@ -39,10 +39,7 @@ The very meaning of our name is “GROWTH”. We partner with you to bring you g
                 <p>
                 WIZTECH Info Solutions has developed a strategic plan that aggressively pursues advances in QA, Mobility, ERP, Big Data & Cloud to pioneer excellent services to our clients. We are creating an robust organization to provide solutions to all IT Consulting, Development, Implementation, Outsourcing, and support needs.
                 </p>
-                <div className="mt-4">
-                  <Link to="/contact" className="btn btn-primary me-3">Contact Us</Link>
-                  <Link to="/what-we-offer" className="btn btn-outline-primary">Our Services</Link>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -100,7 +97,7 @@ The very meaning of our name is “GROWTH”. We partner with you to bring you g
           </div>
 
           {/* IT Staffing Services */}
-          <div id="it-staffing" className="service-item mb-5">
+          <div id="it-staffing" className="service-item mb-5" data-aos="fade-up">
             <div className="service-header mb-4">
               <div className="service-header-flex">
                 <div className="service-header-img">
@@ -135,7 +132,7 @@ The very meaning of our name is “GROWTH”. We partner with you to bring you g
           </div>
 
           {/* Application Development */}
-          <div id="app-development" className="service-item mb-5">
+          <div id="app-development" className="service-item mb-5" data-aos="fade-up">
             <div className="service-header mb-4">
               <div className="service-header-flex">
                 <div className="service-header-img">
@@ -166,7 +163,7 @@ The very meaning of our name is “GROWTH”. We partner with you to bring you g
           </div>
 
           {/* Cloud Solutions */}
-          <div id="cloud-solutions" className="service-item mb-5">
+          <div id="cloud-solutions" className="service-item mb-5" data-aos="fade-up">
             <div className="service-header mb-4">
               <div className="service-header-flex">
                 <div className="service-header-img">
@@ -186,7 +183,7 @@ The very meaning of our name is “GROWTH”. We partner with you to bring you g
           </div>
 
           {/* ERP/CRM Practice */}
-          <div id="erp-crm" className="service-item mb-5">
+          <div id="erp-crm" className="service-item mb-5" data-aos="fade-up">
             <div className="service-header mb-4">
               <div className="service-header-flex">
                 <div className="service-header-img">
@@ -222,7 +219,7 @@ The very meaning of our name is “GROWTH”. We partner with you to bring you g
           </div>
 
           {/* Cyber Security */}
-          <div id="cyber-security" className="service-item mb-5">
+          <div id="cyber-security" className="service-item mb-5" data-aos="fade-up">
             <div className="service-header mb-4">
               <div className="service-header-flex">
                 <div className="service-header-img">
@@ -255,7 +252,7 @@ The very meaning of our name is “GROWTH”. We partner with you to bring you g
           </div>
 
           {/* HR Services */}
-          <div id="hr-services" className="service-item">
+          <div id="hr-services" className="service-item" data-aos="fade-up">
             <div className="service-header mb-4">
               <div className="service-header-flex">
                 <div className="service-header-img">

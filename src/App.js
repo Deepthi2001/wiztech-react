@@ -40,7 +40,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
