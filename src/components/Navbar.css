@@ -1,0 +1,47 @@
+.navbar {
+  background-color: white;
+  box-shadow: var(--shadow-sm);
+  padding: 0.5rem 0;
+}
+
+.navbar-logo {
+  height: 85px;
+  width: auto;
+  transition: transform var(--transition-fast);
+}
+
+.navbar-brand:hover .navbar-logo {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  color: var(--text-dark);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color var(--transition-fast);
+}
+
+.nav-link:hover {
+  color: var(--primary-dark);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 991px) {
+  .navbar-logo {
+    height: 35px;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    padding: 0;
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  
+  .navbar-toggler i {
+    color: var(--primary-dark);
+    font-size: 1.5rem;
+  }
+}
