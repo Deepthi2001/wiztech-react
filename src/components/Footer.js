@@ -13,17 +13,7 @@ const Footer = () => {
             traditional staffing and consulting services – we believe in
             relationships. We are invested in you.
           </p>
-          <div className="social-links">
-            <a href="#" className="social-icon">
-              <i className="fab fa-linkedin"></i>
-            </a>
-            <a href="#" className="social-icon">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="#" className="social-icon">
-              <i className="fab fa-facebook"></i>
-            </a>
-          </div>
+          
         </div>
 
         <div className="footer-column">
@@ -31,7 +21,7 @@ const Footer = () => {
           <ul className="footer-links">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/job-seekers">Job Seekers</Link></li>
-            <li><Link to="/services">Our Services</Link></li>
+            <li><Link to="/what-we-offer">What we Offer</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
             <li><Link to="/about">About Us</Link></li>
           </ul>

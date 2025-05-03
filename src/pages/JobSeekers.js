@@ -200,7 +200,7 @@ const JobSeekers = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="benefits-section section-padding">
+      <section className="benefits-section section-padding bg-light">
         <div className="container">
           <h2 className="text-center mb-5">Benefits</h2>
           <div className="row">

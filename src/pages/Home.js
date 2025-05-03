@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ServiceCard } from './ServiceCard';
 
 const Home = () => {
   return (

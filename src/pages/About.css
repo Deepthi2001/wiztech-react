@@ -163,24 +163,28 @@
 
 .service-header {
   margin-bottom: 2rem;
-  text-align: center;
+}
+
+.service-header-flex {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .service-header h3 {
   color: var(--primary-dark);
   font-weight: 600;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  margin: 0;
   position: relative;
-  display: inline-block;
+  font-size: 1.8rem;
 }
 
 .service-header h3::after {
   content: '';
   position: absolute;
   bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   width: 50px;
   height: 3px;
   background-color: var(--primary-dark);
@@ -209,18 +213,18 @@
 }
 
 .service-header-img {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 1.5rem;
   position: relative;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   background-color: white;
-  padding: 15px;
+  padding: 12px;
 }
 
 .service-header-img img {

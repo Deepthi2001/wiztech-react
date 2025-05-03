@@ -101,11 +101,13 @@ The very meaning of our name is “GROWTH”. We partner with you to bring you g
 
           {/* IT Staffing Services */}
           <div id="it-staffing" className="service-item mb-5">
-            <div className="service-header text-center mb-4">
-              <div className="service-header-img mx-auto">
-                <img src={require('../images/it_staff_service.jpeg')} alt="IT Staffing Services" />
+            <div className="service-header mb-4">
+              <div className="service-header-flex">
+                <div className="service-header-img">
+                  <img src={require('../images/it_staff_service.jpeg')} alt="IT Staffing Services" />
+                </div>
+                <h3>IT Staffing Services</h3>
               </div>
-              <h3 className="mt-3">IT Staffing Services</h3>
             </div>
             <div className="row">
                 <div className="service-content">
@@ -134,11 +136,13 @@ The very meaning of our name is “GROWTH”. We partner with you to bring you g
 
           {/* Application Development */}
           <div id="app-development" className="service-item mb-5">
-            <div className="service-header text-center mb-4">
-              <div className="service-header-img mx-auto">
-                <img src={require('../images/app_dev.jpeg')} alt="Application Development" />
+            <div className="service-header mb-4">
+              <div className="service-header-flex">
+                <div className="service-header-img">
+                  <img src={require('../images/app_dev.jpeg')} alt="Application Development" />
+                </div>
+                <h3>Application Development and Support</h3>
               </div>
-              <h3 className="mt-3">Application Development and Support</h3>
             </div>
             <div className="row">
                 <div className="service-content">
@@ -163,11 +167,13 @@ The very meaning of our name is “GROWTH”. We partner with you to bring you g
 
           {/* Cloud Solutions */}
           <div id="cloud-solutions" className="service-item mb-5">
-            <div className="service-header text-center mb-4">
-              <div className="service-header-img mx-auto">
-                <img src={require('../images/cloud.png')} alt="Cloud Solutions" />
+            <div className="service-header mb-4">
+              <div className="service-header-flex">
+                <div className="service-header-img">
+                  <img src={require('../images/cloud.png')} alt="Cloud Solutions" />
+                </div>
+                <h3>Cloud Solutions</h3>
               </div>
-              <h3 className="mt-3">Cloud Solutions</h3>
             </div>
             <div className="row">
                 <div className="service-content">
@@ -181,11 +187,13 @@ The very meaning of our name is “GROWTH”. We partner with you to bring you g
 
           {/* ERP/CRM Practice */}
           <div id="erp-crm" className="service-item mb-5">
-            <div className="service-header text-center mb-4">
-              <div className="service-header-img mx-auto">
-                <img src={require('../images/ERP-CRM.png')} alt="ERP/CRM Practice" />
+            <div className="service-header mb-4">
+              <div className="service-header-flex">
+                <div className="service-header-img">
+                  <img src={require('../images/ERP-CRM.png')} alt="ERP/CRM Practice" />
+                </div>
+                <h3>ERP/CRM Practice</h3>
               </div>
-              <h3 className="mt-3">ERP/CRM Practice</h3>
             </div>
             <div className="row">
               
@@ -215,11 +223,13 @@ The very meaning of our name is “GROWTH”. We partner with you to bring you g
 
           {/* Cyber Security */}
           <div id="cyber-security" className="service-item mb-5">
-            <div className="service-header text-center mb-4">
-              <div className="service-header-img mx-auto">
-                <img src={require('../images/cyber.png')} alt="Cyber Security Solutions" />
+            <div className="service-header mb-4">
+              <div className="service-header-flex">
+                <div className="service-header-img">
+                  <img src={require('../images/cyber.png')} alt="Cyber Security Solutions" />
+                </div>
+                <h3>Cyber Security Solutions</h3>
               </div>
-              <h3 className="mt-3">Cyber Security Solutions</h3>
             </div>
             <div className="row">
                 <div className="service-content">
@@ -246,11 +256,13 @@ The very meaning of our name is “GROWTH”. We partner with you to bring you g
 
           {/* HR Services */}
           <div id="hr-services" className="service-item">
-            <div className="service-header text-center mb-4">
-              <div className="service-header-img mx-auto">
-                <img src={require('../images/HR.png')} alt="HR Services" />
+            <div className="service-header mb-4">
+              <div className="service-header-flex">
+                <div className="service-header-img">
+                  <img src={require('../images/HR.png')} alt="HR Services" />
+                </div>
+                <h3>HR Services for Small Business</h3>
               </div>
-              <h3 className="mt-3">HR Services for Small Business</h3>
             </div>
             <div className="row">
                 <div className="service-content">
