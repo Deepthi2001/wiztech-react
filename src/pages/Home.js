@@ -140,43 +140,60 @@ const Home = () => {
             </div>
           </div>
           <div className="row mt-5 g-4">
-            {[
-              {
-                title: 'Telecommunication',
-                description: 'Digital solutions for telecom',
-                icon: 'fas fa-signal'
-              },
-              {
-                title: 'Banking and Finance',
-                description: 'Secure and innovative financial solutions',
-                icon: 'fas fa-dollar-sign'
-              },
-              {
-                title: 'Retail',
-                description: 'Digital transformation for retail success',
-                icon: 'fas fa-store'
-              },
-              {
-                title: 'Public Sector',
-                description: 'Empowering government services',
-                icon: 'fas fa-building'
-              },
-              {
-                title: 'Healthcare and Insurance',
-                description: 'Technology solutions for healthcare',
-                icon: 'fas fa-hospital'
-              }
-            ].map((industry, index) => (
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" key={index}>
-                <div className="industry-card">
-                  <div className="industry-icon">
-                    <i className={industry.icon}></i>
-                  </div>
-                  <h3>{industry.title}</h3>
-                  <p>{industry.description}</p>
+            {/* Telecommunication */}
+            <div className="col-lg-4 col-md-6" data-aos="fade-up">
+              <div className="industry-card">
+                <div className="industry-icon">
+                  <span>📡</span>
                 </div>
+                <h3>Telecommunication</h3>
+                <p>Digital solutions for telecom</p>
               </div>
-            ))}
+            </div>
+            
+            {/* Banking and Finance */}
+            <div className="col-lg-4 col-md-6" data-aos="fade-up">
+              <div className="industry-card">
+                <div className="industry-icon">
+                  <span>💰</span>
+                </div>
+                <h3>Banking and Finance</h3>
+                <p>Secure and innovative financial solutions</p>
+              </div>
+            </div>
+            
+            {/* Retail */}
+            <div className="col-lg-4 col-md-6" data-aos="fade-up">
+              <div className="industry-card">
+                <div className="industry-icon">
+                  <span>🛒</span>
+                </div>
+                <h3>Retail</h3>
+                <p>Digital transformation for retail success</p>
+              </div>
+            </div>
+            
+            {/* Public Sector */}
+            <div className="col-lg-4 col-md-6" data-aos="fade-up">
+              <div className="industry-card">
+                <div className="industry-icon">
+                  <span>🏛️</span>
+                </div>
+                <h3>Public Sector</h3>
+                <p>Empowering government services</p>
+              </div>
+            </div>
+            
+            {/* Healthcare and Insurance */}
+            <div className="col-lg-4 col-md-6" data-aos="fade-up">
+              <div className="industry-card">
+                <div className="industry-icon">
+                  <span>🏥</span>
+                </div>
+                <h3>Healthcare and Insurance</h3>
+                <p>Technology solutions for healthcare</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
