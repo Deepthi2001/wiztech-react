@@ -154,6 +154,10 @@ const Contact = () => {
         </div>
       </section>
 
+      <section>
+        
+      </section>
+
       {/* Contact Form Section */}
       <section className="contact-form-section section-padding">
         <div className="container">

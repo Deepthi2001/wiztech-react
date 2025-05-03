@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import JobSeekers from './pages/JobSeekers';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
+import About from './pages/About';
 
 // Import required CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -32,6 +33,7 @@ function App() {
           <Route path="/job-seekers" element={<JobSeekers />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
         </Routes>
         <Footer />
       </div>

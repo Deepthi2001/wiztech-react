@@ -20,8 +20,8 @@ const Home = () => {
                 <Link to="/job-seekers" className="btn btn-primary btn-lg me-3">
                   Find Job
                 </Link>
-                <Link to="/services" className="btn btn-outline-primary btn-lg">
-                  Our Services
+                <Link to="/about" className="btn btn-outline-primary btn-lg">
+                  About Us
                 </Link>
               </div>
             </div>
@@ -44,31 +44,36 @@ const Home = () => {
           <div className="row mt-5 g-4">
             {[
               {
-                title: 'IT Staffing Services'
+                title: 'IT Staffing Services',
+                link: '/about#it-staffing'
               },
               {
-                title: 'Application Development and Support'
+                title: 'Application Development and Support',
+                link: '/about#app-development'
               },
               {
-                title: 'Cloud Solutions'
+                title: 'Cloud Solutions',
+                link: '/about#cloud-solutions'
               },
               {
                 title: 'ERP/CRM Practice',
+                link: '/about#erp-crm'
               },
               {
                 title: 'Cyber Security Solutions',
+                link: '/about#cyber-security'
               },
               {
                 title: 'HR Services for Small Business',
+                link: '/about#hr-services'
               }
               
             ].map((service, index) => (
               <div className="col-lg-4 col-md-6" data-aos="fade-up" key={index}>
-                {/* <ServiceCard title={service.title} description={service.description} /> */}
                 <div className="service-card">
                   <h3>{service.title}</h3>
                   <p>{service.description}</p>
-                  <Link to="/services" className="btn btn-outline-primary">
+                  <Link to={service.link} className="btn btn-outline-primary">
                     Know More
                   </Link>
                 </div>
@@ -139,7 +144,7 @@ const Home = () => {
                 goals. We take on the responsibility of sourcing, screening, and
                 hiring a most suitable candidate for our esteemed clients.
               </p>
-              <Link to="/services" className="btn btn-primary btn-lg">
+              <Link to="/about" className="btn btn-primary btn-lg">
                 Know More
               </Link>
             </div>
@@ -148,18 +153,21 @@ const Home = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="section-padding bg-gradient-light">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-8 text-center" data-aos="fade-up">
-              <h2 className="section-title">Get in Touch</h2>
-              <p className="section-subtitle mb-4">
-                Have questions about our services or looking for career
-                opportunities? We'd love to hear from you!
-              </p>
-              <Link to="/contact" className="btn btn-primary btn-lg px-5">
-                <i className="fas fa-envelope me-2"></i>Contact Us Now
-              </Link>
+      <section id="contact" className="contact-section-tall">
+        <div className="contact-overlay"></div>
+        <div className="container position-relative h-100">
+          <div className="row h-100 align-items-center">
+            <div className="col-lg-6 offset-lg-6" data-aos="fade-left">
+              <div className="contact-content-box">
+                <h2 className="section-title text-white">Find the right opportunity for you</h2>
+                <p className="section-subtitle mb-4 text-white">
+                  Have questions about our services or looking for career
+                  opportunities? We'd love to hear from you!
+                </p>
+                <Link to="/contact" className="btn btn-light btn-lg px-5">
+                  <i className="fas fa-envelope me-2"></i>Contact Us Now
+                </Link>
+              </div>
             </div>
           </div>
         </div>
