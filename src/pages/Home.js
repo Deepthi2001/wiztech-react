@@ -16,8 +16,8 @@ const Home = () => {
                 with right talent in India and across the Globe
               </p>
               <div className="hero-buttons mt-5">
-                <Link to="/job-seekers" className="btn btn-primary btn-lg me-3">
-                  Find Job
+                <Link to="/job-openings" className="btn btn-primary btn-lg me-3">
+                  Find a Job
                 </Link>
                 <Link to="/about" className="btn btn-outline-primary btn-lg">
                   About Us
@@ -44,37 +44,55 @@ const Home = () => {
             {[
               {
                 title: 'IT Staffing Services',
+                description: 'Find the right talent for your business needs with our specialized IT staffing services.',
+                image: require('../images/itstaff.jpg'),
                 link: '/about#it-staffing'
               },
               {
                 title: 'Application Development and Support',
+                description: 'Custom application development and ongoing support to meet your business objectives.',
+                image: require('../images/application_dev.jpg'),
                 link: '/about#app-development'
               },
               {
                 title: 'Cloud Solutions',
+                description: 'Scalable and secure cloud solutions to modernize your IT infrastructure.',
+                image: require('../images/cloud.jpg'),
                 link: '/about#cloud-solutions'
               },
               {
                 title: 'ERP/CRM Practice',
+                description: 'Streamline your business processes with integrated ERP and CRM solutions.',
+                image: require('../images/crm.jpg'),
                 link: '/about#erp-crm'
               },
               {
                 title: 'Cyber Security Solutions',
+                description: 'Protect your business with comprehensive cybersecurity solutions and services.',
+                image: require('../images/cyber.jpg'),
                 link: '/about#cyber-security'
               },
               {
                 title: 'HR Services for Small Business',
+                description: 'Comprehensive HR solutions tailored for small businesses to manage talent effectively.',
+                image: require('../images/HR.jpg'),
                 link: '/about#hr-services'
               }
               
             ].map((service, index) => (
               <div className="col-lg-4 col-md-6" data-aos="fade-up" key={index}>
-                <div className="service-card">
-                  <h3>{service.title}</h3>
-                  <p>{service.description}</p>
-                  <Link to={service.link} className="btn btn-outline-primary">
-                    Know More
-                  </Link>
+                <div className="home-service-card">
+                  <div className="service-image">
+                    <img src={service.image} alt={service.title} />
+                  </div>
+                  <div className="service-content">
+                    <h3>{service.title}</h3>
+                    <p>{service.description}</p>
+                    <Link to={service.link} className="know-more-btn">
+                      <span>Know More</span>
+                      <i className="fas fa-arrow-right"></i>
+                    </Link>
+                  </div>
                 </div>
               </div>
             ))}
@@ -82,8 +100,38 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Discover Your Dream Job Section */}
+      <section id="dream-job" className="section-padding dream-job-section bg-light-indigo">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6" data-aos="fade-right">
+              <h2 className="section-title">Discover your dream job</h2>
+              <p className="lead mb-4">
+                WIZTECH helps skilled professionals like you to find Contract or full-time opportunities 
+                throughout India. Our Talent team is committed to match your skills and career goals, 
+                with the right opportunity. WIZTECH Staffing Services has the expertise in connecting 
+                employers with the right talents they are looking for.
+              </p>
+              <div className="dream-job-buttons">
+                <Link to="/job-openings" className="btn btn-primary btn-lg me-3">
+                  Find Open Jobs
+                </Link>
+                <Link to="/job-seekers" className="btn btn-outline-primary btn-lg">
+                  How It Works
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-6" data-aos="fade-left">
+              <div className="dream-job-image">
+                <img src={require('../images/career.jpeg')} alt="Find your dream job" className="img-fluid rounded" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Industries Section */}
-      <section id="industries" className="section-padding bg-light-indigo">
+      <section id="industries" className="section-padding bg-light-blue">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8 text-center" data-aos="fade-up">
@@ -125,7 +173,7 @@ const Home = () => {
       </section>
 
       {/* What We Offer Section */}
-      <section id="what-we-offer" className="section-padding">
+      <section id="what-we-offer" className="section-padding bg-light-indigo">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8 text-center" data-aos="fade-up">
@@ -143,7 +191,7 @@ const Home = () => {
                 goals. We take on the responsibility of sourcing, screening, and
                 hiring a most suitable candidate for our esteemed clients.
               </p>
-              <Link to="/about" className="btn btn-primary btn-lg">
+              <Link to="/what-we-offer" className="btn btn-primary btn-lg">
                 Know More
               </Link>
             </div>

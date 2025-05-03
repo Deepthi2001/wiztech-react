@@ -9,11 +9,21 @@ const JobSeekers = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-10 mx-auto text-center">
-              <h1 className="mb-4">Find Your Dream Job</h1>
-              <div className="job-seekers-content">
+              <h1 className="mb-4">Job Seekers</h1>
+              <Link to="/job-openings" className="btn btn btn-outline-primary btn-lg me-3">Find a Job
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="job-seekers-content section-padding">
+          <div className="container">
+            <div className="row">
                 <p className="lead">
                   WIZTECH INFO SOLUTIONS helps skilled professionals like you to find
-                  Contract or full-time opportunities throughout North America. Our
+                  Contract or full-time opportunities throughout India. Our
                   Talent team is committed to match your skills and career goals
                   with the right opportunity.
                 </p>
@@ -38,9 +48,8 @@ const JobSeekers = () => {
                   position, culture, and career you want.
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
+             </div>
+           </div>
       </section>
 
       {/* How It Works Section */}
@@ -137,63 +146,29 @@ const JobSeekers = () => {
         </div>
       </section>
 
-      {/* Find Open Jobs Section */}
-      <section id="open-jobs" className="section-padding">
+      {/* Take Your Career to the Next Level Section */}
+      <section id="career-next-level">
         <div className="container">
-          <div className="row justify-content-center mb-5">
-            <div className="col-lg-8 text-center" data-aos="fade-up">
-              <h2 className="section-title">Find Open Jobs</h2>
-              <p className="section-subtitle">
-                Discover opportunities that match your skills and career goals
-              </p>
-            </div>
-          </div>
-          <div className="row g-4">
-            {[
-              {
-                type: 'Contract',
-                title: 'DevOps Engineer',
-                location: 'San Francisco, CA',
-                tags: ['Docker', 'Kubernetes', 'CI/CD'],
-                delay: 100
-              },
-              {
-                type: 'Full Time',
-                title: 'Data Scientist',
-                location: 'Hyder',
-                tags: ['Python', 'ML', 'TensorFlow'],
-                delay: 300
-              }
-            ].map((job, index) => (
-              <div
-                className="col-md-6 col-lg-4"
-                data-aos="fade-up"
-                data-aos-delay={job.delay}
-                key={index}
-              >
-                <div className="job-card">
-                  <div className="job-type">{job.type}</div>
-                  <h3>{job.title}</h3>
-                  <p className="job-location">
-                    <i className="fas fa-map-marker-alt"></i> {job.location}
-                  </p>
-                  <div className="job-tags">
-                    {job.tags.map((tag, tagIndex) => (
-                      <span key={tagIndex}>{tag}</span>
-                    ))}
-                  </div>
-                  <Link to="/contact" className="btn btn-outline-primary mt-3">
-                    Apply Now
-                  </Link>
-                </div>
+          <div className="row align-items-center">
+            <div className="col-lg-5" data-aos="fade-right">
+              <div className="career-text-content pe-lg-4">
+                <h2 className="section-title">Take your career to the next level.</h2>
+                <p className="section-subtitle mb-4">
+                  Join WIZTECH and discover exciting opportunities that match your skills and aspirations. We're committed to helping you find the perfect role and supporting your professional growth throughout your career journey.
+                </p>
+                <Link to="/job-openings" className="btn btn-primary btn-lg px-4 py-2">
+                  Find Open Jobs
+                </Link>
               </div>
-            ))}
-          </div>
-          <div className="row mt-5">
-            <div className="col-12 text-center">
-              <Link to="/contact" className="btn btn-primary btn-lg">
-                View All Jobs
-              </Link>
+            </div>
+            <div className="col-lg-7" data-aos="fade-left">
+              <div className="career-image-container">
+                <img 
+                  src={require('../images/next_level.avif')}
+                  alt="Career Growth" 
+                  className="img-fluid"
+                />
+              </div>
             </div>
           </div>
         </div>

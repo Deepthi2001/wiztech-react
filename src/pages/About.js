@@ -41,7 +41,7 @@ The very meaning of our name is “GROWTH”. We partner with you to bring you g
                 </p>
                 <div className="mt-4">
                   <Link to="/contact" className="btn btn-primary me-3">Contact Us</Link>
-                  <Link to="/services" className="btn btn-outline-primary">Our Services</Link>
+                  <Link to="/what-we-offer" className="btn btn-outline-primary">Our Services</Link>
                 </div>
               </div>
             </div>
