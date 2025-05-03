@@ -1,4 +1,5 @@
 import React from 'react';
+import './Contact.css';
 
 const Contact = () => {
   const handleSubmit = (e) => {
@@ -21,8 +22,14 @@ const Contact = () => {
       </section>
 
       {/* Contact Information Section */}
-      <section className="contact-info-section section-padding bg-light">
+      <section className="contact-info-section">
         <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-8 text-center mb-5">
+              <h2>Contact Information</h2>
+              <p className="lead">Get in touch with us through any of these channels</p>
+            </div>
+          </div>
           <div className="row">
             {[
               {
@@ -38,15 +45,21 @@ const Contact = () => {
               {
                 icon: 'fas fa-phone',
                 title: 'Phone',
-                content: ['+91 XXXXXXXXXX']
+                content: [
+                  '+91 XXXXXXXXXX',
+                  'Mon - Fri, 9:00 AM - 6:00 PM IST'
+                ]
               },
               {
                 icon: 'fas fa-envelope',
                 title: 'Email',
-                content: ['info@wiztechinfo.com']
+                content: [
+                  'info@wiztechinfo.com',
+                  'support@wiztechinfo.com'
+                ]
               }
             ].map((info, index) => (
-              <div className="col-lg-4" key={index}>
+              <div className="col-lg-4 mb-4" key={index}>
                 <div className="contact-info-card">
                   <div className="contact-icon">
                     <i className={info.icon}></i>

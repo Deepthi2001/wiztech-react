@@ -1,19 +1,9 @@
+@import './styles/variables.css';
+
 /* General Styles */
+@import './styles/variables.css';
+
 :root {
-  --primary-color: #2563eb;
-  --secondary-color: #1e40af;
-  --accent-color: #06b6d4;
-  --text-color: #0f172a;
-  --text-secondary: #1e40af;
-  --light-bg: #f0f9ff;
-  --light-blue-bg: #dbeafe;
-  --light-indigo-bg: #e0e7ff;
-  --light-cyan-bg: #cffafe;
-  --dark-bg: #0f172a;
-  --card-bg: #ffffff;
-  --border-radius: 8px;
-  --transition: all 0.3s ease;
-  --section-padding: 100px 0;
   --hero-height: 100vh;
 }
 
@@ -39,11 +29,11 @@ body {
   color: var(--dark-color);
   font-weight: 500;
   padding: 0.5rem 1rem;
-  transition: color 0.3s ease;
+  transition: color var(--transition-fast);
 }
 
 .nav-link:hover {
-  color: var(--primary-color);
+  color: var(--primary-dark);
 }
 
 /* Hero Section */
@@ -61,12 +51,12 @@ body {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: var(--light-bg)
+  color: #f0f0f0;
 }
 
 .hero-subtitle {
   font-size: 1.5rem;
-  color: var(--light-blue-bg);
+  color: #f0f0f0;
 }
 
 .hero-shape {
@@ -75,7 +65,7 @@ body {
   right: 0;
   width: 50%;
   height: 100%;
-  background-color: var(--primary-color);
+  background-color: var(--primary-dark);
   clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   opacity: 0.1;
 }
@@ -103,7 +93,7 @@ body {
   border-radius: 10px;
   padding: 2rem;
   height: 100%;
-  transition: transform 0.3s ease;
+  transition: transform var(--transition-fast);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -122,7 +112,7 @@ body {
 }
 
 .bg-gradient-light {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: #e8eaf6;
 }
 
 /* Footer */
@@ -132,7 +122,7 @@ body {
 
 .social-links a {
   font-size: 1.2rem;
-  transition: color 0.3s ease;
+  transition: color var(--transition-fast);
 }
 
 .social-links a:hover {
@@ -141,7 +131,7 @@ body {
 
 /* Job Seekers Page Styles */
 .job-seekers-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('');
+  background: var(--primary-gradient), url('');
   background-size: cover;
   background-position: center;
   color: white;
@@ -152,10 +142,10 @@ body {
   background: white;
   padding: 2rem;
   border-radius: var(--border-radius);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-sm);
   text-align: center;
   height: 100%;
-  transition: transform 0.3s ease;
+  transition: transform var(--transition-fast);
 }
 
 @media (min-width: 992px) {
@@ -179,20 +169,20 @@ body {
 .process-icon {
   width: 120px;
   height: 120px;
-  background: linear-gradient(135deg, var(--primary-color) 0%, #0056b3 100%);
+  background: var(--primary-gradient);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 2rem;
   position: relative;
-  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .process-card:hover .process-icon {
   transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 123, 255, 0.3);
+  box-shadow: var(--shadow-lg);
 }
 
 .process-icon i {
@@ -214,7 +204,7 @@ body {
   border-radius: 50%;
   z-index: 0;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity var(--transition-fast);
 }
 
 .process-card:hover .process-icon::before {
@@ -227,7 +217,7 @@ body {
   top: -15px;
   right: -15px;
   background: #fff;
-  color: var(--primary-color);
+  color: var(--primary-dark);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -236,7 +226,7 @@ body {
   text-align: center;
   font-weight: bold;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--primary-dark);
 }
 
 .process-card {
@@ -246,7 +236,7 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   text-align: center;
   height: 100%;
-  transition: transform 0.3s ease;
+  transition: transform var(--transition-fast);
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -267,14 +257,14 @@ body {
   background: white;
   padding: 2rem;
   border-radius: var(--border-radius);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-sm);
   height: 100%;
 }
 
 .job-type {
   display: inline-block;
   padding: 0.25rem 1rem;
-  background: var(--primary-color);
+  background: var(--primary-gradient);
   color: white;
   border-radius: 20px;
   margin-bottom: 1rem;
@@ -306,8 +296,8 @@ body {
   padding: 2rem;
   background: white;
   border-radius: var(--border-radius);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast);
 }
 
 .benefit-card:hover {
@@ -316,13 +306,13 @@ body {
 
 .benefit-card i {
   font-size: 2.5rem;
-  color: var(--primary-color);
+  color: var(--primary-dark);
   margin-bottom: 1.5rem;
 }
 
 /* Contact Page Styles */
 .contact-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('');
+  background: var(--primary-gradient), url('');
   background-size: cover;
   background-position: center;
   color: white;
@@ -333,10 +323,10 @@ body {
   background: white;
   padding: 2rem;
   border-radius: var(--border-radius);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-sm);
   text-align: center;
   height: 100%;
-  transition: transform 0.3s ease;
+  transition: transform var(--transition-fast);
 }
 
 .contact-info-card:hover {
@@ -345,7 +335,7 @@ body {
 
 .contact-icon {
   font-size: 2.5rem;
-  color: var(--primary-color);
+  color: var(--primary-dark);
   margin-bottom: 1.5rem;
 }
 
@@ -353,7 +343,7 @@ body {
   background: white;
   padding: 3rem;
   border-radius: var(--border-radius);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-sm);
 }
 
 .contact-form label {
@@ -369,14 +359,14 @@ body {
 }
 
 .contact-form .form-control:focus {
-  border-color: var(--primary-color);
+  border-color: var(--primary-dark);
   box-shadow: 0 0 0 0.2rem rgba(var(--primary-rgb), 0.25);
 }
 
 .map-container {
   border-radius: var(--border-radius);
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-sm);
 }
 
 /* Responsive */
