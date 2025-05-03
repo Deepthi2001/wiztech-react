@@ -14,7 +14,7 @@ const Home = () => {
                 We help business teams be more productive, creative & successful
               </h1>
               <p className="hero-subtitle">
-                with right talent in US and across the Globe
+                with right talent in India and across the Globe
               </p>
               <div className="hero-buttons mt-5">
                 <Link to="/job-seekers" className="btn btn-primary btn-lg me-3">
