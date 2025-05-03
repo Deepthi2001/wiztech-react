@@ -1,6 +1,9 @@
 .services-content {
-  padding: 5rem 0;
-  background: #f8f9fa;
+  background: var(--primary-gradient), url('');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 150px 0;
 }
 
 .services-intro {
@@ -12,7 +15,7 @@
 .services-intro p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #666;
+  color: white;
   margin-bottom: 1.5rem;
 }
 
