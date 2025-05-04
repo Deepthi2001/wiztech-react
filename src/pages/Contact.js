@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Contact.css';
 
 const Contact = () => {
@@ -109,7 +110,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Information Section */}
-      <section className="contact-info-section">
+      <section className="contact-info-section bg-light-indigo">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8 text-center mb-5">
@@ -154,12 +155,35 @@ const Contact = () => {
         </div>
       </section>
 
-      <section>
-        
+      {/* Career Help Section */}
+      <section className="career-help-section section-padding">
+        <div className="container position-relative">
+          <div className="row">
+            <div className="col-lg-7 col-md-8">
+              <div className="career-help-content">
+                <h2 className="section-title mb-4">We're Here For You</h2>
+                <p className="lead mb-4">
+                  Whether you're a candidate or an existing associate, we're 
+                  here to help on every step of your career journey.
+                </p>
+                <p className="mb-4">
+                  Our dedicated team provides personalized guidance, resources, and support 
+                  to ensure your professional success. From resume building to interview 
+                  preparation, we're committed to helping you achieve your career goals.
+                </p>
+                <div className="mt-4">
+                  <Link to="/job-seekers" className="btn btn-blue-white btn-lg">
+                    Know More
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Contact Form Section */}
-      <section className="contact-form-section section-padding">
+      <section className="contact-form-section section-padding bg-light-indigo">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8">

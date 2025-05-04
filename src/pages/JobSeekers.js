@@ -10,7 +10,7 @@ const JobSeekers = () => {
           <div className="row">
             <div className="col-lg-10 mx-auto text-center">
               <h1 className="mb-4">Job Seekers</h1>
-              <Link to="/job-openings" className="btn btn btn-outline-primary btn-lg me-3">Find a Job
+              <Link to="/job-openings" className="btn btn btn-white-blue btn-lg me-3">Find a Job
               </Link>
             </div>
           </div>
@@ -22,7 +22,7 @@ const JobSeekers = () => {
           <div className="container">
             <div className="row">
                 <p className="lead">
-                  WIZTECH INFO SOLUTIONS helps skilled professionals like you to find
+                  WIZTECH Info Solutions helps skilled professionals like you to find
                   Contract or full-time opportunities throughout India. Our
                   Talent team is committed to match your skills and career goals
                   with the right opportunity.
@@ -177,10 +177,10 @@ const JobSeekers = () => {
       {/* Benefits Section */}
       <section className="benefits-section section-padding bg-light">
         <div className="container">
-          <h2 className="text-center mb-5">Benefits</h2>
+          <h2 className="section-title text-center mb-5">Benefits</h2>
           <div className="row">
             <div className="col-lg-8 mx-auto">
-              <p className="text-center mb-5">
+              <p className="section-subtitle text-center mb-5">
                 We are passionate about our Employees. This means not only working
                 with them to advance their technology careers but also providing
                 them with a comprehensive array of benefits and career development

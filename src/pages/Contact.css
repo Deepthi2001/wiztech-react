@@ -71,10 +71,88 @@
   margin-bottom: 0;
 }
 
+/* Career Help Section */
+.career-help-section {
+  width: 70%;
+  position: relative;
+  background-image: url('../images/career_progress_contact.jpg');
+  background-size: cover;
+  background-position: right center;
+  z-index: 1;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 50px auto;
+}
+
+.career-help-content {
+  padding: 3rem;
+  border-radius: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.career-help-content .section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.career-help-content .section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: var(--primary-gradient);
+  border-radius: 2px;
+}
+
+.career-help-content .lead {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--primary-dark);
+  line-height: 1.6;
+}
+
+.career-help-content p {
+  color: #444;
+  line-height: 1.7;
+  position: relative;
+  z-index: 2;
+}
+
 /* Responsive adjustments */
 @media (max-width: 992px) {
   .contact-info-card {
     margin-bottom: 2rem;
+  }
+  
+  .career-help-content {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+  
+  .career-help-section {
+    padding: 5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .career-help-content {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+  
+  .career-help-content .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .career-help-content .lead {
+    font-size: 1.1rem;
   }
 }
 

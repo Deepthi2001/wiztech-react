@@ -20,7 +20,7 @@ const Home = () => {
                 <Link to="/job-openings" className="btn btn-primary btn-lg me-3">
                   Find a Job
                 </Link>
-                <Link to="/about" className="btn btn-outline-primary btn-lg">
+                <Link to="/about" className="btn btn-white-blue btn-lg">
                   About Us
                 </Link>
               </div>

@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-column">
           <h5>About Us</h5>
           <p>
-            WIZTECH INFO SOLUTIONS was established and firmly rooted beyond
+            WIZTECH Info Solutions was established and firmly rooted beyond
             traditional staffing and consulting services – we believe in
             relationships. We are invested in you.
           </p>
@@ -43,7 +43,7 @@ const Footer = () => {
               <span>
                  #14-226, Plot No. 58, West Raghava Nagar,
                   Meerpet, Saroor Nagar, Rangareddi,
-                  Telangana, India, 500097'</span>
+                  Telangana, India, 500097</span>
             </li>
           </ul>
         </div>

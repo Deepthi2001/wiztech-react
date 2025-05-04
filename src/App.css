@@ -232,6 +232,13 @@ body {
   margin-bottom: 2rem;
 }
 
+.job-seekers-content{
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
 .career-image-container {
   position: relative;
   text-align: right;
@@ -257,9 +264,23 @@ body {
 }
 
 .btn-white-blue:hover {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.789);
   color: var(--primary-dark);
   transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-blue-white {
+  color: white;
+  background-color: var(--primary-dark);
+  border: 1px solid white;
+}
+
+.btn-blue-white:hover {
+  background-color: var(--light-blue);
+  color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+  border: 1px solid white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 

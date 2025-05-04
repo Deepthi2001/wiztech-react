@@ -571,7 +571,7 @@ const JobDetails = () => {
                             <div className="form-buttons">
                               <button 
                                 type="submit" 
-                                className="btn btn-white-blue btn-lg w-100"
+                                className="btn btn-blue-white btn-lg w-100"
                                 disabled={isSubmitting}
                               >
                                 {isSubmitting ? (

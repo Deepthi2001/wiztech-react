@@ -2,7 +2,7 @@
   /* Primary Colors */
   --primary-dark: #0e1b53;
   --primary-light: #0e1b53;
-  --light-blue: #566bca;
+  --light-blue: #17297a;
   
   /* Gradients */
   --primary-gradient: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-light) 100%);
