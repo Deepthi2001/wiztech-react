@@ -297,7 +297,7 @@ const JobOpenings = () => {
                       </div>
                     </div>
                     <div className="job-card-footer">
-                      <Link to={`/job-details/${encodeURIComponent(job.title)}`} className="btn btn-primary btn-sm">
+                      <Link to={`/job-details/${encodeURIComponent(job.title)}`} className="btn btn-blue-white btn-sm">
                         More Details
                       </Link>
                       
