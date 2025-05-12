@@ -22,7 +22,7 @@ const JobSeekers = () => {
           <div className="container">
             <div className="row">
                 <p className="lead">
-                  WIZTECH Info Solutions helps skilled professionals like you to find
+                  Wiztech Info Solutions helps skilled professionals like you to find
                   Contract or full-time opportunities throughout India. Our
                   Talent team is committed to match your skills and career goals
                   with the right opportunity.

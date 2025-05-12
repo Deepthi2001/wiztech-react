@@ -126,7 +126,7 @@ const Contact = () => {
                   <i className="fas fa-map-marker-alt"></i>
                 </div>
                 <h3>Corporate Office</h3>
-                <p>WIZTECH Info Solutions Private Limited</p>
+                <p>Wiztech Info Solutions Pvt Ltd</p>
                 <p>#14-226, Plot No. 58, West Raghava Nagar,</p>
                 <p>Meerpet, Saroor Nagar, Rangareddi,</p>
                 <p>Telangana, India, 500097</p>
@@ -138,8 +138,7 @@ const Contact = () => {
                   <i className="fas fa-phone"></i>
                 </div>
                 <h3>Phone</h3>
-                <p>+91 XXXXXXXXXX</p>
-                <p>Mon - Fri, 9:00 AM - 6:00 PM IST</p>
+                <p>040-35074945</p>
               </div>
             </div>
             <div className="col-md-4">
@@ -148,7 +147,7 @@ const Contact = () => {
                   <i className="fas fa-envelope"></i>
                 </div>
                 <h3>Email</h3>
-                <p>info@wiztechinfo.com</p>
+                <p>sales@wiztechinfo.com</p>
               </div>
             </div>
           </div>

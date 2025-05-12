@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-column">
           <h5>About Us</h5>
           <p>
-            WIZTECH Info Solutions was established and firmly rooted beyond
+            Wiztech Info Solutions was established and firmly rooted beyond
             traditional staffing and consulting services – we believe in
             relationships. We are invested in you.
           </p>
@@ -32,11 +32,11 @@ const Footer = () => {
           <ul className="contact-info">
             <li>
               <i className="fas fa-envelope"></i>
-              <span>info@wiztechinfosolutions.com</span>
+              <span>sales@wiztechinfo.com</span>
             </li>
             <li>
               <i className="fas fa-phone"></i>
-              <span>+1 (123) 456-7890</span>
+              <span>040-35074945</span>
             </li>
             <li>
               <i className="fas fa-map-marker-alt"></i>

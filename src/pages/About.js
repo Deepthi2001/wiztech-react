@@ -24,7 +24,7 @@ const About = () => {
           <div className="row align-items-center">
             <div className="col-lg-5 mb-5 mb-lg-0">
               <div className="about-image-container">
-                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="WIZTECH Team" className="img-fluid rounded shadow-lg" />
+                <img src={require('../images/whoweare.jpeg')} alt="WIZTECH Team" className="img-fluid rounded shadow-lg" />
               </div>
             </div>
             <div className="col-lg-7">
@@ -37,7 +37,7 @@ const About = () => {
 The very meaning of our name is “GROWTH”. We partner with you to bring you growth. We constantly work on finding quality talent for your business need. Through our focused approach and commitment to select best, we take care of our customers’ evolving needs.
                 </p>
                 <p>
-                WIZTECH Info Solutions has developed a strategic plan that aggressively pursues advances in QA, Mobility, ERP, Big Data & Cloud to pioneer excellent services to our clients. We are creating an robust organization to provide solutions to all IT Consulting, Development, Implementation, Outsourcing, and support needs.
+                Wiztech Info Solutions has developed a strategic plan that aggressively pursues advances in QA, Mobility, ERP, Big Data & Cloud to pioneer excellent services to our clients. We are creating an robust organization to provide solutions to all IT Consulting, Development, Implementation, Outsourcing, and support needs.
                 </p>
                 
               </div>
