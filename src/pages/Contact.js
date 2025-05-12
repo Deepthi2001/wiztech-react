@@ -126,7 +126,7 @@ const Contact = () => {
                   <i className="fas fa-map-marker-alt"></i>
                 </div>
                 <h3>Corporate Office</h3>
-                <p>Wiztech Info Solutions Pvt Ltd</p>
+                <p>WizTech Info Solutions Pvt Ltd</p>
                 <p>#14-226, Plot No. 58, West Raghava Nagar,</p>
                 <p>Meerpet, Saroor Nagar, Rangareddi,</p>
                 <p>Telangana, India, 500097</p>

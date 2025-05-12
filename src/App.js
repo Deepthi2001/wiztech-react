@@ -16,6 +16,9 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'aos/dist/aos.css';
 import './App.css';
 
+// Import Bootstrap JS
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
   

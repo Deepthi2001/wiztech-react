@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-column">
           <h5>About Us</h5>
           <p>
-            Wiztech Info Solutions was established and firmly rooted beyond
+            WizTech Info Solutions was established and firmly rooted beyond
             traditional staffing and consulting services – we believe in
             relationships. We are invested in you.
           </p>
@@ -50,7 +50,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} WIZTECH INFO SOLUTIONS. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} WizTech Info Solutions. All rights reserved.</p>
       </div>
     </footer>
   );
